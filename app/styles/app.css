@@ -7,10 +7,11 @@
 .categoria{
 	background-image: url('/assets/images/go.jpg');
 	background-size: cover;
-	width: 220px;
-	height: 220px;
-	margin: 0 70px 70px 70px;
+	/*width: 200px;*/
+	height: 250px;
+	/*margin: 0;*/
 	position: relative;
+	cursor: pointer;
 }
 .opaco{
 	width: 100%;

@@ -12,6 +12,7 @@
 	/*margin: 0;*/
 	position: relative;
 	cursor: pointer;
+	border:10px solid white;
 }
 .opaco{
 	width: 100%;

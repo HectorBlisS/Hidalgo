@@ -1,16 +1,28 @@
-<nav class="nav azul-gobierno">
+{{!-- <nav class="nav azul-gobierno">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">HidalGo</a>
+      {{link-to 'HidalGo' 'index' class="brand-logo"}}
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li>{{link-to 'Explorar' 'index'}}</li>
+        <li>{{link-to 'Explorar' 'projects'}}</li>
         <li><a href="#!">Cómo funciona</a></li>
         <li>{{link-to 'Publica un Proyecto' 'login' class="btn red center"}}</li>
+
+        {{#if session.isAuthenticated}}
+        <li>
+          <img src="{{session.currentUser.photoURL}}">
+        </li>
+        <li>
+          Cerrar Sesión
+        </li>
+        {{/if}}
+
       </ul>
+
+
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#!">Explorar</a></li>
+        <li>{{link-to 'Explorar' 'projects'}}</li>
         <li><a href="#!">Cómo funciona</a></li>
         <li>{{link-to 'Publica un Proyecto' 'login' class="btn red center"}}</li>
       </ul>
     </div>
-  </nav>
+  </nav> --}}

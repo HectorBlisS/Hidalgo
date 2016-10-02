@@ -13,8 +13,9 @@ export default Ember.Controller.extend({
 					photoURL:usuario.photoURL,
 					id:usuario.uid
 				}).save();
+				self.transitionToRoute('projects');
 			});
-			this.transitionToRoute('projects');
+			
 	}
 }
 });

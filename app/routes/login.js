@@ -11,6 +11,9 @@ export default Ember.Route.extend({
 			})
 			.catch(function(){});
 	},
+	model(){
+		this.store.createRecord('user');
+	}
 
 	
 	// 

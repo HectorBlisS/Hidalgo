@@ -5,5 +5,6 @@ export default DS.Model.extend({
 	desc: DS.attr('string'),
 	img: DS.attr('string'),
 	video: DS.attr('string'),
+	categoria: DS.attr('string'),
 	usuario: DS.belongsTo('user')
 });

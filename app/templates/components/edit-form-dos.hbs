@@ -1,0 +1,27 @@
+<form {{action 'guardar' on="submit"}}>
+
+<label>
+	Nombre de tu proyecto
+	{{input value=model.titulo}}
+</label>
+
+<label>
+	Describe tu proyecto
+	{{textarea rows="10" value=model.desc}}
+</label>
+
+<label>
+	El link de tu imagen
+	{{input value=model.img}}
+</label>
+
+<label>
+	El link de tu video
+	{{input value=model.video}}
+</label>
+
+
+<input class="red waves-effect waves-light btn" type="submit" value="GUARDAR MI PROYECTO">
+<button disabled style="float:right" class="btn green waves-effect waves-light">Enviar a Validación</button>
+</form>
+

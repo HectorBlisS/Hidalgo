@@ -5,7 +5,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/q69IT4I7sGg" frameborder="0" allowfullscreen></iframe>
     </article>
     <article class="col s12 m6">
-        <h5>Nombre del proyecto</h5>
+        <h5>{{model.titulo}}</h5>
         <p>
             Pequeña descripción
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -27,6 +27,17 @@
             </div>
         </div>
         <button class="waves-effect waves-light btn col m4 green">Votar</button>
+
+        {{#if session.isAuthenticated}}
+
+        {{#link-to 'projects.edit' model}}
+        <button class="waves-effect waves-light btn col m4 orange">Editar</button>
+        {{/link-to}}
+
+
+
+        {{/if}}
+
         <i class="fa fa-heart-o icoon fa-2x" aria-hidden="true"><span>0</span></i>
     </article>
 </section>

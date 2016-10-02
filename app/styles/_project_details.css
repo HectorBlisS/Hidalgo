@@ -1,0 +1,18 @@
+.progress{
+    height: 15px;
+}
+.icoon{
+    color:#F44336 !important;
+    padding-top: 1%;
+    margin-left: 5%;
+}
+.icoon span{
+    font-family: 'Roboto';
+    padding-left: 30%;
+}
+.details_header .votes_progress_container{
+    margin-top: 2%;
+}
+.details_main article p{
+    text-align: center;
+}

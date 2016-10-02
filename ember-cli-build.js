@@ -8,6 +8,9 @@ module.exports = function(defaults) {
   });
 
   app.import('bower_components/jquery/dist/jquery.js');
+  //Carousel
+  app.import('bower_components/OwlCarousel/owl-carousel/owl.carousel.css');
+  app.import('bower_components/OwlCarousel/owl-carousel/owl.carousel.js');
   // app.import('bower_components/materialize/dist/css/materialize.css');
   // app.import('bower_components/materialize/dist/js/materialize.js');
   //Fuentes

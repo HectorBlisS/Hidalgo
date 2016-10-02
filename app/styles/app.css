@@ -96,7 +96,7 @@ Aqui empieza login*/
 .tittle{
 	font-family: 'Dosis', sans-serif;
 	text-align:center;
-	 margin-top:40px;
+	 margin-top:60px;
 }
 
 #idea{
@@ -133,10 +133,21 @@ Aqui empieza login*/
 	width:80%;
 	margin-left:10%;
 	margin-top:50px;
+	transition:all 1s ease;
+	cursor:pointer;
 }
 #terminos{
 	font-size:10px;
 	margin-top:50px;
 	text-align:center;
 }
+.datos{
+	width:80%;
+	margin-left:10%;
+	display:inline-flex;
+}
+.footer{
+	width:40%;
+	margin-left:15px;
 
+}

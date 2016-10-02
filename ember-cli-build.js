@@ -7,6 +7,18 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/jquery/dist/jquery.js');
+  // app.import('bower_components/materialize/dist/css/materialize.css');
+  // app.import('bower_components/materialize/dist/js/materialize.js');
+  //Fuentes
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Regular.woff2',{
+  //   destDir: 'assets'
+  // });
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Medium.woff2');
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Regular.woff');
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Medium.woff');
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Regular.ttf');
+  // app.import('bower_components/materialize/dist/fonts/roboto/Roboto-Medium.ttf');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

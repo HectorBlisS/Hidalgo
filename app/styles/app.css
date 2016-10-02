@@ -145,9 +145,33 @@ Aqui empieza login*/
 	width:80%;
 	margin-left:10%;
 	display:inline-flex;
-}
-.footer{
-	width:40%;
-	margin-left:15px;
+	margin-top:30px;
 
 }
+#perfil{
+	display:block;
+	width:50%;
+}
+.footer{
+	width:60%;
+	margin-left:20%;
+}
+.foto{
+	border-radius:50px;
+	width:20%;
+	margin-left:40%;
+}
+.foto_perfil{
+	border-radius:25px;
+	margin:0;
+	width:90%;
+
+}
+.lista_perfil{
+	border-bottom:#cfd8dc solid 2px ;
+	display:inline-flex;
+	margin-left:160px;
+
+}
+.pestanas{
+margin: 0 140px 3px 140px ;}

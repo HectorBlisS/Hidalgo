@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+	
+
 	actions:{
 		login(provider){
 			let self=this;
@@ -14,7 +16,7 @@ export default Ember.Controller.extend({
 					id:usuario.uid
 				}).save();
 			});
-			this.transitionToRoute('projects');
+			// this.transitionToRoute('projects');
 	}
 }
 });

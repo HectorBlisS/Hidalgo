@@ -1,43 +1,53 @@
 <div>
 	<div>
-	<h1>NAME{{session.currentUser.displayName}}</h1>
+	<h1 class='tittle'>{{session.currentUser.displayName}}</h1>
+<ul class='lista_perfil'>
+<li class='pestanas'>Perfil</li>
+<li class='pestanas'>Proyectos</li>
+<li class='pestanas'>Comentarios</li>
 
+</ul>
 	</div>
 	<div class='datos'>
 	<div>
-		<img src="http://losviajesdedomi.com/wp-content/uploads/2014/03/Chicen-itza-maravillas-del-mundo-1.jpg">
+		<img class='foto_perfil'src="http://losviajesdedomi.com/wp-content/uploads/2014/03/Chicen-itza-maravillas-del-mundo-1.jpg">
+	</div>
+	<div id='perfil'>
+	<div>
+	<img class='foto'src="{{session.currentUser.photoURL}}">
 	</div>
 	<div class='footer'>
-		<footer class="page-footer">
+		<footer style='background:#8bc34a 'class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Sobre mi</h5>
+                <p class="grey-text text-lighten-4">
+                <ul>
+                <li>Proyectos</li>
+                <li>Votos</li>
+                </ul>
+
+                </p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">#</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">5</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">40</a></li>
+                  
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+           
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
           </div>
         </footer>
 	</div>
 	</div>
+	</div>
 </div>
-
-<img class='usuario' src="{{session.currentUser.photoURL}}">
-			<p class='brendi'> 
-			{{session.currentUser.displayName}}
-			</p>

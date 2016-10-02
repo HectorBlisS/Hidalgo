@@ -1,14 +1,4 @@
 <div>
-{{#if session.isAuthenticated}}
- 
-  {{#link-to 'projects'}}
-  <a style='background:#8bc34a'class="waves-effect waves-light btn modal-trigger" href="#modal1">Subir proyecto</a>
-  {{/link-to}}
-
-  <!-- Modal Structure -->
-  
-  {{else}}
-
   <a style='background:#8bc34a'class=" botoncito waves-effect waves-light btn modal-trigger" href="#modal1">Subir proyecto</a>
   <div id="modal1" class=" modal">
     <div class="modal-content">
@@ -26,7 +16,7 @@
       <a href="#!" class=" cancelar modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
     </div>
   </div>
-  {{/if}}
+ 
   </div>
 
 

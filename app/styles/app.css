@@ -1,6 +1,9 @@
 .nav{
 
 }
+.azul-gobierno{
+	background-color: #002F52;
+}
 .categoria{
 	background-image: url('/assets/images/go.jpg');
 	background-size: cover;
@@ -49,7 +52,22 @@
 	filter:blur(3px);
 	-moz-opacity: 0.5;
 	opacity: 0.5;
+	position: relative;
 }
+
+.flotando{
+	position: absolute;
+	bottom: 20%;
+	left:20%;
+	z-index: 999;
+
+}
+@media (min-width: 600px){
+	.flotando{
+	left:40%;
+	}
+}
+
 /*footer*/
 #blue_footer {
     background: #002F52;
@@ -57,4 +75,15 @@
     background-repeat: no-repeat;
     background-position: right;
 }
-	
+
+/*Owl carousel*/
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+

@@ -26,7 +26,7 @@
                 <div class="determinate green" style="width: 70%"></div>
             </div>
         </div>
-        <button class="waves-effect waves-light btn col m4 green">Votar</button>
+        <button {{action 'votar' model}} class="waves-effect waves-light btn col m4 green">Votar</button>
 
         {{#if session.isAuthenticated}}
 
@@ -37,8 +37,10 @@
 
 
         {{/if}}
-
-        <i class="fa fa-heart-o icoon fa-2x" aria-hidden="true"><span>0</span></i>
+{{!-- Numero de votos --}}
+        <i class="fa fa-heart-o icoon fa-2x" aria-hidden="true">
+            <span>{{model.votos_number}}</span></i>
+{{!-- Numero de votos --}}
     </article>
 </section>
 <section class="details_main row">

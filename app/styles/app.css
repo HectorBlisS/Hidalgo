@@ -1,9 +1,12 @@
+.nav{
+
+}
 .categoria{
 	background-image: url('/assets/images/go.jpg');
 	background-size: cover;
 	width: 220px;
 	height: 220px;
-	margin: 0 10px 10px 10px;
+	margin: 0 50px 50px 50px;
 	position: relative;
 }
 .opaco{
@@ -34,4 +37,7 @@
 .opaco:hover > i{
 	color:black;
 	border-bottom: 1px solid black;
+}
+.mosaico{
+	margin-top: 100px;
 }

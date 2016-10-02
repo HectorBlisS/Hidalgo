@@ -1,0 +1,11 @@
+select{
+    display: inline-block;
+    border-color: #F44336 !important;
+    -webkit-appearance: none;
+    background-image: url('/assets/images/flecha_dropdown.png');
+    background-repeat: no-repeat;
+    background-position: top 12px right 25px;
+}
+.projects_filter{
+    text-align: center;
+}

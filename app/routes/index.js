@@ -12,6 +12,7 @@ export default Ember.Route.extend({
     Ember.run.scheduleOnce('afterRender', this, function(){
     	// perform your jQuery logic here
     	Ember.$("#test").fadeOut("slow");
+			Ember.$('select').material_select();
     });
   }
 });

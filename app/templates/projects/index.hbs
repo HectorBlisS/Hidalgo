@@ -1,6 +1,8 @@
 <header class="projects_filter">
     <h4>Proyectos</h4>
     <div class="filters_container row">
+
+
         <div class="input-field col s12 m4">
             <select name="" id="">
                 <option value="" disabled selected>Categorías</option>
@@ -22,11 +24,15 @@
                 <option value="" disabled selected>Finaliza Pronto</option>
             </select>
         </div>
+
+
     </div>
 </header>
 
 <article class="row">
-    {{card-proyecto}}
+    {{#each model as |p|}}
+    {{card-proyecto model=p}}
+    {{/each}}
 </article>
 
 <div class="row">

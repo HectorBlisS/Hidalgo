@@ -170,8 +170,14 @@ Aqui empieza login*/
 .lista_perfil{
 	border-bottom:#cfd8dc solid 2px ;
 	display:inline-flex;
-	margin-left:160px;
+	margin-left:10%;
 
 }
 .pestanas{
-margin: 0 140px 3px 140px ;}
+margin: 0 50px 3px 50px ;
+}
+@media (min-width: 300px){
+.pestanas{
+margin: 0 20px 3px 20px ;
+}	
+}

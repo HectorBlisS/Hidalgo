@@ -1,5 +1,7 @@
 <div>
 
+{{#if session.isAuthenticated}}
+
 <h3 class='tittle'>Quieres proponer un proyecto?</h3>
 <div class='inicio'>
 	<div id='idea'>
@@ -10,9 +12,28 @@
 		HidalGo es una plataforma de inclusion ciudadana en donde tu, como ciudadano, puedes subir propuestas de proyecto que contribuyan a mejorar la calidad de vida de los hidalguenses o resuelvan problematicas de forma tanto municipal, como estatal. 
 		Las propuestas que generen mayor cantidad de votos seran evaluadas para identificar su viabilidad.
 		</p>
-		{{log-in}}
+		 {{#link-to 'projects'}}
+  			<a style='background:#8bc34a'class="botoncito waves-effect waves-light btn modal-trigger" href="#modal1">Subir proyecto</a>
+  			{{/link-to}}
 
   </div>
 
 </div>
+{{else}}
+<h3 class='tittle'>Quieres proponer un proyecto?</h3>
+<div class='inicio'>
+	<div id='idea'>
+	<img class='image' src="http://www.oronoticias.com.mx/Noticia/2/img/emprendedorespueblaapoyosnota-03112014-172932.jpg">
+	</div>
+	<div class='text'>
+		<p>
+		HidalGo es una plataforma de inclusion ciudadana en donde tu, como ciudadano, puedes subir propuestas de proyecto que contribuyan a mejorar la calidad de vida de los hidalguenses o resuelvan problematicas de forma tanto municipal, como estatal. 
+		Las propuestas que generen mayor cantidad de votos seran evaluadas para identificar su viabilidad.
+		</p>
+		{{log-in login=(action 'login')}}
+
+  </div>
+
+</div>
+{{/if}}
 </div>

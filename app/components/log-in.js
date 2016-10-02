@@ -7,6 +7,12 @@ export default Ember.Component.extend({
 			//jquery
 			Ember.$('.modal-trigger').leanModal();
 		});
-	} 
+	},
+	actions:{
+		login(provider){
+			this.login(provider);
+		
+		}
+	}
 
 });

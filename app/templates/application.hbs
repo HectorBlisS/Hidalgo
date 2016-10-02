@@ -1,4 +1,54 @@
 {{nav-bar}}
+<nav class="nav azul-gobierno">
+    <div class="nav-wrapper">
+      {{link-to 'HidalGo' 'index' class="brand-logo"}}
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>{{link-to 'Explorar' 'projects'}}</li>
+        <li><a href="#!">Cómo funciona</a></li>
+        <li>{{link-to 'Publica un Proyecto' 'login' class="btn red center"}}</li>
+
+        {{#if session.isAuthenticated}}
+        <li>
+          {{#link-to 'perfil'}}
+          <img style="height:60px; border-radius:50%;" src="{{session.currentUser.photoURL}}">
+          {{/link-to}}
+        </li>
+        <li {{action 'logout'}}>
+          <a href="#!">Cerrar Sesión</a>
+        </li>
+        {{else}}
+        <li>
+          {{link-to 'Iniciar Sesión' 'login'}}
+        </li>
+        {{/if}}
+
+      </ul>
+
+
+      <ul class="side-nav" id="mobile-demo">
+        <li>{{link-to 'Explorar' 'projects'}}</li>
+        <li><a href="#!">Cómo funciona</a></li>
+        <li>{{link-to 'Publica un Proyecto' 'login' class="btn red center"}}</li>
+        {{#if session.isAuthenticated}}
+        <li>
+          {{#link-to 'perfil'}}
+          <img style="height:60px; border-radius:50%;" src="{{session.currentUser.photoURL}}">
+          {{/link-to}}
+        </li>
+        <li {{action 'logout'}}>
+          <a href="#!">Cerrar Sesión</a>
+        </li>
+        {{else}}
+        <li>
+          {{link-to 'Iniciar Sesión' 'login'}}
+        </li>
+        {{/if}}
+        
+      </ul>
+    </div>
+  </nav>
+
 {{outlet}}
         <footer id="blue_footer" class="page-footer">
           <div class="container">

@@ -96,7 +96,7 @@ Aqui empieza login*/
 .tittle{
 	font-family: 'Dosis', sans-serif;
 	text-align:center;
-	 margin-top:40px;
+	 margin-top:60px;
 }
 
 #idea{
@@ -133,10 +133,51 @@ Aqui empieza login*/
 	width:80%;
 	margin-left:10%;
 	margin-top:50px;
+	transition:all 1s ease;
+	cursor:pointer;
 }
 #terminos{
 	font-size:10px;
 	margin-top:50px;
 	text-align:center;
 }
+.datos{
+	width:80%;
+	margin-left:10%;
+	display:inline-flex;
+	margin-top:30px;
 
+}
+#perfil{
+	display:block;
+	width:50%;
+}
+.footer{
+	width:60%;
+	margin-left:20%;
+}
+.foto{
+	border-radius:50px;
+	width:20%;
+	margin-left:40%;
+}
+.foto_perfil{
+	border-radius:25px;
+	margin:0;
+	width:90%;
+
+}
+.lista_perfil{
+	border-bottom:#cfd8dc solid 2px ;
+	display:inline-flex;
+	margin-left:10%;
+
+}
+.pestanas{
+margin: 0 50px 3px 50px ;
+}
+@media (min-width: 300px){
+.pestanas{
+margin: 0 20px 3px 20px ;
+}	
+}

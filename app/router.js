@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('details', {
       //path: ':project_id'
     });
+    this.route('new');
   });
   this.route('login');
   this.route('perfil');

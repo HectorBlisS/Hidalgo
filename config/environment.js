@@ -2,6 +2,16 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase:{
+       apiKey: "AIzaSyAnF8mq6Qyxsh9N6s-TdOUH9EpwOxr8jKw",
+    authDomain: "hidalgo-f65ba.firebaseapp.com",
+    databaseURL: "https://hidalgo-f65ba.firebaseio.com",
+    storageBucket: "hidalgo-f65ba.appspot.com",
+    messagingSenderId: "821336519111"
+  },
+  torii:{
+    sessionServiceName: 'session'
+  },
     modulePrefix: 'hidalgo',
     environment: environment,
     rootURL: '/',

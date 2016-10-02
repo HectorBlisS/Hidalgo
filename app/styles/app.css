@@ -82,13 +82,61 @@
 }
 
 /*Owl carousel*/
-#owl-demo .item{
+/*#owl-demo .item{
   margin: 3px;
 }
 #owl-demo .item img{
   display: block;
   width: 100%;
   height: auto;
+}*/
+/*
+Aqui empieza login*/
+
+.tittle{
+	font-family: 'Dosis', sans-serif;
+	text-align:center;
+	 margin-top:40px;
 }
 
+#idea{
+	width:50%;
+
+
+}
+.inicio{
+	width:80%;
+	display:inline-flex;
+	margin-left:10%;
+	margin-top:60px;
+	height:350px;
+}
+
+.image{
+	width:80%;
+	border-radius:25px;
+	padding:10px;
+}
+.text{
+	width:50%;
+	padding:10px;
+	text-align:justify;
+}
+.botoncito{
+	margin-left:180px;
+	margin-top:40px;
+}
+.modal{
+	width:30%;
+}
+.redes{
+	width:80%;
+	margin-left:10%;
+	margin-top:50px;
+}
+#terminos{
+	font-size:10px;
+	margin-top:50px;
+	text-align:center;
+}
 

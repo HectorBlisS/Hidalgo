@@ -7,9 +7,9 @@ export default Ember.Route.extend({
 			this.get('session')
 			.fetch()
 			.then(function(){
-				self.transitionTo('login');
+				// self.transitionTo('login');
 			})
 			.catch(function(){});
-	},
+	}
 
 });

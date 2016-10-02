@@ -1,5 +1,5 @@
 <div>
-{{!-- {{#if session.isAuthenticated}}
+{{#if session.isAuthenticated}}
  
   {{#link-to 'projects'}}
   <a style='background:#8bc34a'class="waves-effect waves-light btn modal-trigger" href="#modal1">Subir proyecto</a>
@@ -7,16 +7,17 @@
 
   <!-- Modal Structure -->
   
-  {{else}} --}}
+  {{else}}
+
   <a style='background:#8bc34a'class=" botoncito waves-effect waves-light btn modal-trigger" href="#modal1">Subir proyecto</a>
   <div id="modal1" class=" modal">
     <div class="modal-content">
       <h4 class='tittle'>Iniciar Sesion</h4>
      <div class='botones'>
-     	<img class='redes'src="http://fbsticker.com/images/loginwithfb-or.png"{{!--  {{action 'login' 'facebook'}} --}}>
+     	<img class='redes'src="http://fbsticker.com/images/loginwithfb-or.png" {{action 'login' "facebook"}}>
      </div>
      <div class='botones'>
-     <img class='redes' src="https://www.codenameone.com/img/blog/google-sign-in.png"{{!--  {{action 'login' 'google'}} --}}>
+     <img style='height:55px'class='redes' src="https://www.codenameone.com/img/blog/google-sign-in.png" {{action 'login' 'google'}}>
      </div>
      <p id='terminos'>Al iniciar sesión aceptas nuestros Términos de uso y Política de privacidad.</p>
     
@@ -25,5 +26,7 @@
       <a href="#!" class=" cancelar modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
     </div>
   </div>
- {{!--  {{/if}} --}}
+  {{/if}}
   </div>
+
+

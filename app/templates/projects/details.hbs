@@ -1,9 +1,20 @@
 {{outlet}}
-<h1>detalle de producto</h1>
+<article class="container">
+<h1>Conoce este proyecto</h1>
 
 <section class="details_header row">
     <article class="col s12 m6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q69IT4I7sGg" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container">
+        
+        {{#unless model.video}}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iJidOOmAl8c" frameborder="0" allowfullscreen></iframe>
+        {{else}}
+        <iframe width="560" height="315" src="{{model.video}}" frameborder="0" allowfullscreen></iframe>
+        
+        {{/unless}}
+
+        
+        </div>
     </article>
     <article class="col s12 m6">
         <h5>{{model.titulo}}</h5>
@@ -15,7 +26,7 @@
             veritatis neque rerum officiis ad, quae.
         </p>
         <div class="chip">
-            <img src="http://materializecss.com/images/yuna.jpg" alt="Contact Person">
+            <img class="responsive-img" src="http://materializecss.com/images/yuna.jpg" alt="Contact Person">
             Jane Doe
         </div>
         <div class="chip">
@@ -47,39 +58,14 @@
 <section class="details_main row">
     <article class="col m8">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Totam nihil quibusdam quod, molestiae aspernatur, dolores sapiente 
-            possimus vitae perspiciatis repellat voluptatem, aliquid non. Voluptas
-             molestiae consectetur magni tenetur, pariatur necessitatibus!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Voluptates praesentium quia voluptatibus aut! Magnam quis
-              dolorem explicabo ut et odit, soluta officia. Odio tempora
-               ducimus commodi quo eum laudantium dolore.
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               Beatae accusamus, earum mollitia possimus minima labore sit 
-               impedit eos, aspernatur repudiandae adipisci animi. Dolores 
-               earum aliquam, eligendi blanditiis? Enim, impedit nisi.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Facere tempore, dolor officiis reprehenderit porro vero 
-             recusandae perspiciatis commodi vitae nostrum cum deserunt 
-             non velit earum dolores reiciendis sit necessitatibus numquam.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Laborum quo deserunt corporis odit necessitatibus facere
-              beatae fuga iste ea voluptates fugit sunt, repellat,
-               cum numquam, eum? Deleniti odio quasi expedita.
+            {{model.desc}}
         </p>
         <div>
             <figure>
-                <img src="http://www.milenio.com/cultura/concursos-festivales-indigenas-intervencion-espacios_MILIMA20130811_0414_8.jpg" alt="">
+                <img class="responsive-img" src="http://www.milenio.com/cultura/concursos-festivales-indigenas-intervencion-espacios_MILIMA20130811_0414_8.jpg" alt="">
             </figure>
             <figure>
-                <img src="http://www.milenio.com/cultura/Hidalgo-El_Vaticano-documental-artesanias-cultura-Pueblo_Magico_MILIMA20140527_0061_11.jpg" alt="">
+                <img class="responsive-img" src="http://www.milenio.com/cultura/Hidalgo-El_Vaticano-documental-artesanias-cultura-Pueblo_Magico_MILIMA20140527_0061_11.jpg" alt="">
             </figure>
         </div>
     </article>
@@ -131,3 +117,5 @@
         </aside>
     </article>
 </section>
+
+</article>

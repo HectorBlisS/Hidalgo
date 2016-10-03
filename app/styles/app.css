@@ -127,7 +127,7 @@ Aqui empieza login*/
 	margin-top:40px;
 }
 .modal{
-	width:30%;
+	width:60%;
 }
 .redes{
 	width:80%;
@@ -180,4 +180,8 @@ margin: 0 50px 3px 50px ;
 .pestanas{
 margin: 0 20px 3px 20px ;
 }	
+}
+
+.card-title{
+	background:rgba(0,0,0,0.5);
 }

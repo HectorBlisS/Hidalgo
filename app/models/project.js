@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
 	titulo: DS.attr('string'),
@@ -14,12 +15,7 @@ export default DS.Model.extend({
 		  }
 
 		  return this.hasMany('votos').ids().length;
-	// 	  // return "Perras";
+
 	})
-	// numero_votos: Ember.computed('votos',function(){
-	// 	if(this.belongsTo('votos').value() === null){
-	// 		return 'cero';
-	// 	}
-	// 	return this.belongsTo('votos').get('votantes').ids().length;
-	// })
+
 });

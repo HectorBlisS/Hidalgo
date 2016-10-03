@@ -9,9 +9,9 @@ export default Ember.Route.extend({
 		});
 	},
 	beforeModel(){
-			self = this;
+			let self = this;
 			return this.get('session').fetch()
-			.then(function(user){
+			.then(function(){
 				console.log('funciona estas logueado'+self.get('session.currentUser').displayName);
 			})
 			.catch(function(){});

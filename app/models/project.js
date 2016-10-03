@@ -10,10 +10,16 @@ export default DS.Model.extend({
 	votos: DS.hasMany('voto'),
 	votos_number: Ember.computed('votos.[]',function(){
 		  if (this.hasMany('votos').value() === null) {
-		    return 0;
+		    return 'Aún no hay votos';
 		  }
 
 		  return this.hasMany('votos').ids().length;
-		  // return "Perras";
+	// 	  // return "Perras";
 	})
+	// numero_votos: Ember.computed('votos',function(){
+	// 	if(this.belongsTo('votos').value() === null){
+	// 		return 'cero';
+	// 	}
+	// 	return this.belongsTo('votos').get('votantes').ids().length;
+	// })
 });

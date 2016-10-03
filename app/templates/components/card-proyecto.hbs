@@ -1,7 +1,12 @@
 <div class="col s12 m4">
     <div class="card">
         <div class="card-image">
+            {{#unless model.img}}
+            <img src="http://mastermarketingla.com/wp-content/uploads/2014/06/proyecto-propio.jpg">
+            {{else}}
             <img src="{{model.img}}">
+            {{/unless}}
+            
             <span class="card-title">{{model.titulo}}</span>
         </div>
         <div class="card-content">

@@ -11,13 +11,7 @@ export default Ember.Controller.extend({
 				model.save();
 
 			});
-			this.transitionToRoute('projects.edit',model);
-			
-		},
-		setCategoria(){
-			let value = Ember.$('#selec').val();
-			this.get('model').set('categoria',value);
-			// console.log('seteado');
+			this.transitionToRoute('projects.details',model);
 			
 		}
 	}

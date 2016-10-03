@@ -2,15 +2,15 @@
 
 <label>
 	Nombre de tu proyecto
-	{{input value=model.titulo}}
+	{{input required=true value=model.titulo}}
 </label>
 
-<label>
+{{!-- <label>
 	Describe tu proyecto
 	{{textarea rows="10" value=model.desc}}
-</label>
+</label> --}}
 
-<label>
+{{!-- <label>
 	El link de tu imagen
 	{{input value=model.img}}
 </label>
@@ -18,7 +18,17 @@
 <label>
 	El link de tu video
 	{{input value=model.video}}
-</label>
+</label> --}}
+
+  <div class="input-field col s12">
+    <select required='true' id="selec" {{action 'cate' on="change"}} >
+      <option value="" disabled selected>Escoge una Categoría</option>
+      <option value="salud">Salud</option>
+      <option value="comunidad">Comunidad</option>
+      <option value="tecnologia">Tecnología</option>
+    </select>
+    {{!-- <label>Categoría</label> --}}
+  </div>
 
 
 <input class="red waves-effect waves-light btn" type="submit" value="CREAR MI PROYECTO">

@@ -4,8 +4,9 @@
     <article class="col s12 m6 l6">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/q69IT4I7sGg" frameborder="0" allowfullscreen class="col s12 m12 l12"></iframe>
     </article>
-    <article class="col s12 m6 l6">
-        <h5>Nombre del proyecto</h5>
+
+    <article class="col s12 m6">
+        <h5>{{model.titulo}}</h5>
         <p>
             Pequeña descripción
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -26,8 +27,21 @@
                 <div class="determinate green" style="width: 70%"></div>
             </div>
         </div>
-        <button class="waves-effect waves-light btn col m4 green">Votar</button>
-        <i class="fa fa-heart-o icoon fa-2x" aria-hidden="true"><span>0</span></i>
+        <button {{action 'votar' model}} class="waves-effect waves-light btn col m4 green">Votar</button>
+
+        {{#if session.isAuthenticated}}
+
+        {{#link-to 'projects.edit' model}}
+        <button class="waves-effect waves-light btn col m4 orange">Editar</button>
+        {{/link-to}}
+
+
+
+        {{/if}}
+{{!-- Numero de votos --}}
+        <i class="fa fa-heart-o icoon fa-2x" aria-hidden="true">
+            <span>{{model.votos_number}}</span></i>
+{{!-- Numero de votos --}}
     </article>
 </section>
 <section class="details_main row">

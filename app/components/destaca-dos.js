@@ -13,7 +13,7 @@ export default Ember.Component.extend({
 		      slideSpeed : 300,
 		      paginationSpeed : 400,
 		      singleItem:false,
-		      items:3
+		      items:2
 		  });
 		});
 	}
